@@ -1,7 +1,27 @@
+@import 'config';
+@import 'menu';
+
+
 * { 
   box-sizing: border-box;
 }
 
 body { 
-  
+  @include background;
+  background: $primary-color;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  color: set-text-color($primary-color);
+}
+
+
+// Headings 
+
+h1, 
+h2, 
+h3 { 
+  margin: 0; 
+  font-weight: 400;
 }
